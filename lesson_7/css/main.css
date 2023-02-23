@@ -1,0 +1,147 @@
+@import url(reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+.container {
+    background: url(../img/q01.jpg) center / cover no-repeat;
+    font-family: "Poppins", sans-serif;
+    background-color: #e5e5e5;
+    font-weight: 300;
+    font-size: 14px;
+    color: #e5e5e5;
+}
+.container__img-txt {
+    max-width: 1270px;
+    margin: 0 auto;
+    padding: 330px 15px 100px;
+}
+.container__img-txt h6 {
+    font-weight: 300;
+    font-size: 12px;
+    padding-bottom: 15px;
+}
+.container__img-txt h1 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1.72;
+    max-width: 605px;
+    padding-bottom: 15px;
+}
+.container__img-txt p {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.5;
+}
+.content {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #3056d3;
+    background: linear-gradient(
+            115deg,
+            rgba(244, 247, 255, 0) 61%,
+            rgba(48, 86, 211, 0.08) 62%,
+            rgba(244, 247, 255, 0) 100%
+        ),
+        linear-gradient(115deg, rgba(244, 247, 255, 0) 68%, rgba(48, 86, 211, 0.08) 60%, rgba(244, 247, 255, 0) 100%),
+        #f4f7ff;
+}
+.content__img-txt {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 145px 15px 146px;
+}
+.content__img-left {
+    display: inline-block;
+    max-width: 570px;
+    margin-right: 179px;
+}
+.content__img-txt h3 {
+    font-weight: 600;
+    font-size: 18px;
+    color: #3056d3;
+    padding-bottom: 13px;
+}
+.content__img-txt h1 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.78;
+    color: #212b36;
+    padding-bottom: 15px;
+}
+.content__img-txt p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #637381;
+    padding-bottom: 35px;
+}
+.content__butoons {
+    font-weight: 600;
+    font-size: 16px;
+    color: #ffffff;
+    background: #3056d3;
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+.content__img-right {
+    display: inline-block;
+    vertical-align: top;
+}
+.lists {
+    max-width: 1175px;
+    margin: 0 auto;
+    padding: 100px 15px 150px;
+    font-family: "Inter", sans-serif;
+}
+.lists h1 {
+    font-weight: 400;
+    font-size: 26px;
+    color: #212b36;
+    padding-bottom: 45px;
+}
+.lists {
+}
+[class*="__lists"] {
+    display: inline-block;
+    width: 33%;
+    padding-bottom: 60px;
+    padding-right: 91px;
+}
+[class*="__lists"] li {
+    font-weight: 700;
+    font-size: 16px;
+    color: #637381;
+    margin-bottom: 18px;
+    min-height: 20px;
+}
+.ones__lists li {
+    background: url(../img/pik.svg) 0 5px no-repeat;
+    padding-left: 18px;
+}
+.two__lists li {
+    background: url(../img/yes.svg) 0 0 no-repeat;
+    padding-left: 30px;
+    padding-top: 1px;
+}
+.tri__lists li {
+    background: url(../img/yesgrn.svg) 0 0 no-repeat;
+    padding-left: 30px;
+    padding-top: 1px;
+}
+.for__lists li {
+    background: url(../img/krst.svg) 0 0 no-repeat;
+    padding-left: 30px;
+    padding-top: 1px;
+}
+.fiv__lists li {
+    background: url(../img/leftt.svg) 0 0 no-repeat;
+    padding-left: 30px;
+    padding-top: 1px;
+}
+.six__lists li {
+    background: url(../img/allstars.svg) 0 0 no-repeat;
+    padding-left: 30px;
+    padding-top: 1px;
+}
