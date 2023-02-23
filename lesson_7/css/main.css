@@ -50,12 +50,13 @@
 .content__img-txt {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 145px 15px 146px;
+    padding: 81px 15px 83px;
 }
 .content__img-left {
     display: inline-block;
     max-width: 570px;
     margin-right: 179px;
+    vertical-align: middle;
 }
 .content__img-txt h3 {
     font-weight: 600;
@@ -87,7 +88,7 @@
 }
 .content__img-right {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
 }
 .lists {
     max-width: 1175px;
