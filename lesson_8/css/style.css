@@ -169,16 +169,22 @@ body {
     font-weight: 700;
     font-size: 16px;
     color: #637381;
+    min-height: 10px;
+    margin-left: 30px;
+}
+
+[class*="__list"] ul li:not(:last-child) {
     margin-bottom: 18px;
-    min-height: 20px;
 }
 
 .menu__list-one li::before {
     content: "";
     display: inline-block;
-    background: url("../img/Ellipse.svg") 0 0 no-repeat;
-    width: 10px;
-    height: 10px;
+    vertical-align: middle;
+    background: url("../img/Ellipse.svg") 0px 0px no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-left: -30px;
     margin-right: 10px;
     transition: all 0.3s;
 }
@@ -194,6 +200,7 @@ body {
     background: url("../img/chek.svg") 0px 0px no-repeat;
     width: 20px;
     height: 20px;
+    margin-left: -30px;
     margin-right: 10px;
     transition: all 0.3s;
 }
@@ -209,6 +216,7 @@ body {
     background: url("../img/checgr.svg") 0px 0px no-repeat;
     width: 20px;
     height: 20px;
+    margin-left: -30px;
     margin-right: 10px;
     transition: all 0.7s;
 }
@@ -224,6 +232,7 @@ body {
     background: url("../img/cross.svg") 0px 0px no-repeat;
     width: 20px;
     height: 20px;
+    margin-left: -30px;
     margin-right: 10px;
     transition: all 0.5s;
 }
@@ -240,6 +249,7 @@ body {
     background: url("../img/arrow.svg") 0px 0px no-repeat;
     width: 20px;
     height: 20px;
+    margin-left: -30px;
     margin-right: 10px;
     transition: all 0.3s;
 }
@@ -255,6 +265,7 @@ body {
     background: url("../img/stars.svg") 0px 0px no-repeat;
     width: 20px;
     height: 20px;
+    margin-left: -30px;
     margin-right: 10px;
     transition: all 0.6s;
 }
