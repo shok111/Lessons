@@ -1,10 +1,15 @@
 @import url("reset.css");
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap');
 
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #E5E5E5;
+}
+
 .wrapper {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
+    overflow: clip;
+    min-height: 100%;
 }
 
 [class*="__container"] {
@@ -12,6 +17,18 @@
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.header {
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 .header__logo {
@@ -313,8 +330,29 @@
 }
 
 
+.page__container {
+    padding-top: 150px;
+    padding-bottom: 30px;
+}
 
-.page {
-    background-color: #212B36;
-    height: 100vh;
+.block-text__tittle {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.block-text:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.block-text__text:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.block-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #212B36;
 }
