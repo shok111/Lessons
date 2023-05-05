@@ -150,14 +150,14 @@ body {
     color: #495057;
 }
 
-.block-text__tittle {
+.block-text__tittle a {
     font-weight: 700;
     font-size: 25px;
     line-height: 40px;
     color: #212529;
 }
 
-.block-text__tittle:hover {
+.block-text__tittle a:hover {
     text-decoration: underline;
 }
 
@@ -177,7 +177,7 @@ body {
     color: #495057;
 }
 
-.block-text__subtext:hover {
+.block-text__subtext a:hover {
     text-decoration: underline;
 }
 
