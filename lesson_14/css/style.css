@@ -91,6 +91,7 @@ body {
 .cards__column {
     flex: 0 0 33.33%;
     padding: 0 15px;
+    display: flex;
 }
 
 .cards__item {
@@ -103,16 +104,19 @@ body {
 .item-cards__link {
     display: block;
     margin-bottom: 30px;
+    overflow: hidden;
 }
 
 .item-cards__link img {
     max-width: 100%;
     transition: transform 0.8s;
     vertical-align: top;
+    border-radius: 3px;
 }
 
 .item-cards__link img:hover {
     transform: scale(1.05);
+
 }
 
 .item-cards__banner {
@@ -141,6 +145,7 @@ body {
     display: flex;
     flex-direction: column;
     row-gap: 15px;
+    flex: 1 0 auto;
 }
 
 .block-text__date {
@@ -150,11 +155,16 @@ body {
     color: #495057;
 }
 
+.block-text__tittle {
+    flex: 1 0 auto;
+}
+
 .block-text__tittle a {
     font-weight: 700;
     font-size: 25px;
     line-height: 40px;
     color: #212529;
+    display: inline-block;
 }
 
 .block-text__tittle a:hover {
@@ -166,6 +176,7 @@ body {
     font-size: 12px;
     line-height: 20px;
     color: #495057;
+    flex: 1 0 auto;
 }
 
 .block-text__subtext {
