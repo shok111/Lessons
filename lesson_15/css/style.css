@@ -80,6 +80,7 @@ body {
 }
 
 .item-portfilio__image {
+    flex: 0 1 746px;
     position: relative;
     overflow: hidden;
 }
