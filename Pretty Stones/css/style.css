@@ -102,6 +102,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   min-height: 100px;
+  -webkit-transition: min-height 0.3s;
+  transition: min-height 0.3s;
 }
 @media (max-width: 991.97px) {
   .header__container {
@@ -133,6 +135,7 @@ body {
   -webkit-column-gap: 36px;
      -moz-column-gap: 36px;
           column-gap: 36px;
+  padding-top: 5px;
 }
 .menu__item {
   position: relative;
@@ -183,7 +186,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  cursor: pointer;
   gap: 25px;
 }
 .action__item {
@@ -192,6 +194,7 @@ body {
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
+  cursor: pointer;
 }
 .action span {
   position: absolute;

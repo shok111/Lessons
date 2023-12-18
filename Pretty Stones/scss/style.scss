@@ -38,6 +38,7 @@ body {
         justify-content: space-between;
         align-items: center;
         min-height: 100px;
+        transition: min-height 0.3s;
 
         @media (max-width:991.97px) {
             min-height: 50px;
@@ -62,6 +63,7 @@ body {
     &__list {
         display: flex;
         column-gap: 36px;
+        padding-top: 5px;
     }
 
     &__item {
@@ -113,12 +115,12 @@ body {
 
 .action {
     display: flex;
-    cursor: pointer;
     gap: 25px;
 
     &__item {
         position: relative;
         transition: transform 0.3s;
+        cursor: pointer;
     }
 
     &__img {}
