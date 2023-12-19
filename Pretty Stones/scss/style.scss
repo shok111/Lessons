@@ -116,17 +116,15 @@ body {
 .action {
     display: flex;
     gap: 20px;
+    align-items: center;
 
     &__item {
         position: relative;
         transition: transform 0.3s;
-        flex: 0 0 32px;
-        height: 32px;
     }
 
     &__img {
         max-width: 100%;
-        max-height: 100%;
     }
 
     span {
