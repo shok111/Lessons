@@ -121,9 +121,12 @@ body {
         position: relative;
         transition: transform 0.3s;
         cursor: pointer;
+        flex: 0 0 32px;
     }
 
-    &__img {}
+    &__img {
+        max-width: 100%;
+    }
 
     span {
         position: absolute;
