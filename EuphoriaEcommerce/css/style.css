@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:300,regular,500,600,700,800&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+}
+
+textarea,
+button,
+input {
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+  background-color: inherit;
+}
+
+/* Title */
+.title {
+  font-size: 25px;
+  line-height: 1.6;
+  font-weight: 700;
+  color: #212529;
+}
+
+.title_white {
+  color: #fff;
+}
+
+.title_medium {
+  font-weight: 500;
+}
+
+/* ------------------- */
+.text {
+  line-height: 1.66;
+}
+
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/Causten/Causten-Regular.woff2") format("woff2"), url("../fonts/Causten/Causten-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/Causten/Causten-Light.woff2") format("woff2"), url("../fonts/Causten/Causten-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/Causten/Causten-Medium.woff2") format("woff2"), url("../fonts/Causten/Causten-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/Causten/Causten-Semi-Bold.woff2") format("woff2"), url("../fonts/Causten/Causten-Semi-Bold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/Causten/Causten-Bold.woff2") format("woff2"), url("../fonts/Causten/Causten-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CoreSansC";
+  src: url("../fonts/CoreSansC/CoreSansC-Medium.woff2") format("woff2"), url("../fonts/CoreSansC/CoreSansC-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CoreSansC";
+  src: url("../fonts/CoreSansC/CoreSansC-Bold.woff2") format("woff2"), url("../fonts/CoreSansC/CoreSansC-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CoreSansC";
+  src: url("../fonts/CoreSansC/CoreSansC-ExtraBold.woff2") format("woff2"), url("../fonts/CoreSansC/CoreSansC-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #807d7e;
+  background-color: #333;
+}
+
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.wrapper > main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+[class*=__container] {
+  max-width: 1270px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 31px;
+  padding-bottom: 31px;
+}
+
+.header__container {
+  min-height: 108px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fff;
+}
+.header__logo {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 91px;
+          flex: 0 1 91px;
+}
+.header__body {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 1086px;
+          flex: 0 1 1086px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__menu {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 483px;
+          flex: 0 1 483px;
+}
+.header__form {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 295px;
+          flex: 0 1 295px;
+}
+.menu_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.menu__link {
+  color: #807d7e;
+  font-family: "Causten";
+  font-size: 22px;
+  font-weight: 500;
+  line-height: normal;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.menu__link:hover {
+  color: #3c4242;
+}
+
+.form:hover * {
+  outline-color: #807d7e;
+  background-color: #ececec;
+  color: #3c4242;
+}
+.form__item {
+  height: 42px;
+  border-radius: 8px;
+  outline: 1px solid #f6f6f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: outline-color 0.3s ease-in-out;
+  transition: outline-color 0.3s ease-in-out;
+}
+.form__item:focus-within {
+  outline-color: #807d7e;
+}
+.form__button {
+  height: 44px;
+  padding: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 8px 0 0 8px;
+  background-color: #f6f6f6;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+.form__button img {
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+.form__input {
+  height: 44px;
+  width: 100%;
+  background-color: #f6f6f6;
+  border-radius: 0 8px 8px 0;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+.form__input:focus-visible {
+  outline: none;
+}
+.form__input::-webkit-input-placeholder {
+  color: #807d7e;
+}
+.form__input::-moz-placeholder {
+  color: #807d7e;
+}
+.form__input:-ms-input-placeholder {
+  color: #807d7e;
+}
+.form__input::-ms-input-placeholder {
+  color: #807d7e;
+}
+.form__input::placeholder {
+  color: #807d7e;
+}
+
+.action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 12px;
+     -moz-column-gap: 12px;
+          column-gap: 12px;
+}
+.action__img-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid #f6f6f6;
+  background-color: #f6f6f6;
+  border-radius: 8px;
+  -webkit-transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+.action__img-link:hover {
+  background-color: #ececec;
+  border-color: #807d7e;
+}
