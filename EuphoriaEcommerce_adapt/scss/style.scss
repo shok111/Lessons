@@ -534,6 +534,9 @@ body {
         position: relative;
         padding-top: 70px;
         padding-bottom: 49px;
+        display: flex;
+        flex-direction: column;
+        min-height: 89vh;
     }
 
     &__arrow {
@@ -586,13 +589,15 @@ body {
         padding-right: 73px;
         display: flex;
         flex-direction: column;
+        flex: 1 1 auto;
         &:not(:last-child) {
             padding-bottom: 73px;
         }
     }
 
     &__content {
-        flex: 0 1 439px;
+        flex: 0 0 100%;
+        margin: auto 0;
         & > *:not(:last-child) {
             margin-bottom: 40px;
         }
@@ -703,6 +708,7 @@ body {
         display: flex;
         column-gap: 1px;
         justify-content: center;
+        flex: 0 0 100%;
     }
 
     &__indicator {
