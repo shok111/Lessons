@@ -280,15 +280,17 @@ body {
 }
 
 .form:hover * {
-  outline-color: #807d7e;
+  border-color: #807d7e;
   background-color: #ececec;
   color: #3c4242;
 }
 .form__item {
   position: relative;
-  height: 42px;
+  height: 44px;
   border-radius: 8px;
-  outline: 1px solid #f6f6f6;
+  border: 1px solid #f6f6f6;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -298,16 +300,11 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition: outline-color 0.3s ease-in-out, outline 1s;
-  transition: outline-color 0.3s ease-in-out, outline 1s;
+  -webkit-transition: border-color 0.3s ease-in-out, outline 1s;
+  transition: border-color 0.3s ease-in-out, outline 1s;
 }
 .form__item:focus-within {
-  outline-color: #807d7e;
-}
-@media (max-width: 890px) {
-  .form__item {
-    outline: none;
-  }
+  border-color: #807d7e;
 }
 .form__button {
   height: 44px;
