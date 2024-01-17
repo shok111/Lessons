@@ -445,7 +445,8 @@ body {
 .hero__container {
   z-index: 1;
   position: relative;
-  padding-top: 129px;
+  padding-top: 70px;
+  padding-bottom: 49px;
 }
 .hero__arrow {
   z-index: 2;
@@ -526,6 +527,9 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.hero__body:not(:last-child) {
+  padding-bottom: 73px;
+}
 .hero__content {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 439px;
@@ -563,9 +567,7 @@ body {
 }
 .hero__link {
   position: relative;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-block;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -573,6 +575,8 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 16px 72px;
+  height: 61px;
+  width: 250px;
   border-radius: 8px;
   background: #fff;
   color: #3c4242;
@@ -581,11 +585,35 @@ body {
   font-size: 24px;
   font-weight: 700;
   line-height: normal;
+  -webkit-animation: glowing 1300ms infinite;
+          animation: glowing 1300ms infinite;
   -webkit-transition: background-color 0.6s ease-in-out, color 0.6s ease-in-out;
   transition: background-color 0.6s ease-in-out, color 0.6s ease-in-out;
+  background: -webkit-gradient(linear, left top, right top, color-stop(48.9%, #eeeeee), color-stop(49%, #ffffff));
+  background: linear-gradient(90deg, #eeeeee 48.9%, #ffffff 49%);
+  -webkit-animation: borderGradient 8s linear both infinite;
+          animation: borderGradient 8s linear both infinite;
+  background-size: 300%;
+}
+@-webkit-keyframes borderGradient {
+  0%, 100% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+}
+@keyframes borderGradient {
+  0%, 100% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
 }
 .hero__link:hover {
   background-color: #3c4242;
+  color: #fff;
 }
 .hero__link::before {
   display: -webkit-inline-box;
@@ -619,11 +647,45 @@ body {
   height: 100%;
   width: 0;
   border-radius: 8px;
-  background-color: rgba(60, 66, 66, 0.39);
+  background-color: rgba(37, 37, 37, 0.212);
   -webkit-transition: width 0.3s, left 0.3s;
   transition: width 0.3s, left 0.3s;
 }
 .hero__link:hover::after {
   width: 100%;
   left: 0%;
+}
+.hero__carusel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 1px;
+     -moz-column-gap: 1px;
+          column-gap: 1px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.hero__indicator {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 62px;
+          flex: 0 0 62px;
+  width: 62px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.hero__indicator:last-child {
+  border-radius: 0 12px 12px 0;
+}
+.hero__indicator:first-child {
+  border-radius: 12px 0 0 12px;
+}
+.hero__indicator:hover {
+  background-color: #fff;
+}
+.hero__indicator--active {
+  background-color: #fff;
 }
